@@ -14,6 +14,13 @@ export class EmployeesList extends React.Component {
         <div className="empApp">
           <h1>Employee List</h1>
           <div className="emp-detail-wrapper ">
+            <div className="emp-row">
+              <div className="empID">Empid</div>
+              <div className="emp-name">Name</div>
+              <div className="emp-email">Email</div>
+              <div className="emp-sex">Sex</div>
+            </div>
+
             {empArray.map((elem, index) => {
               return (
                 <Link
