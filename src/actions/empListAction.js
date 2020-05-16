@@ -1,6 +1,6 @@
 import { REQUEST_EMP_DATA, RECEIVE_EMP_DATA } from "./types";
 
-const apiUrl = "https://8h16s.sse.codesandbox.io/getAllEmployees";
+const apiUrl = process.env.URL + "/getAllEmployees";
 
 export const reqAllEmpData = () => {
   return {
