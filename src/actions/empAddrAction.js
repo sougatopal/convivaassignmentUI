@@ -1,6 +1,6 @@
 import { REQUEST_EMP_ADDR_DATA, RECEIVE_EMP_ADDR_DATA } from "./types";
 
-const apiUrl = "https://8h16s.sse.codesandbox.io/getEmployeeAdress/";
+const apiUrl = process.env.URL + "/getEmployeeAdress/";
 
 export const reqEmpAddrData = () => {
   return {
@@ -8,7 +8,6 @@ export const reqEmpAddrData = () => {
   };
 };
 export const recievedEmpAddrData = data => {
-  console.log("data recived in recievedAllEmpData", data);
   return {
     type: RECEIVE_EMP_ADDR_DATA,
     data
