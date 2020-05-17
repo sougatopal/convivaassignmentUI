@@ -14,6 +14,15 @@ export class EmployeesList extends React.Component {
         <div className="empApp">
           <h1>Employee List</h1>
           <div className="emp-detail-wrapper ">
+            <div className="emp-row">
+              <div className="empID">Empid</div>
+              <div className="responsive-wrp">
+                <div className="emp-name">Name</div>
+                <div className="emp-email">Email</div>
+                <div className="emp-sex">Sex</div>
+              </div>
+            </div>
+
             {empArray.map((elem, index) => {
               return (
                 <Link
@@ -22,9 +31,11 @@ export class EmployeesList extends React.Component {
                   to={`/address/${elem.Empid}`}
                 >
                   <div className="empID">{elem.Empid}</div>
-                  <div className="emp-name">{elem.Name}</div>
-                  <div className="emp-email">{elem.email}</div>
-                  <div className="emp-sex">{elem.Sex}</div>
+                  <div className="responsive-wrp">
+                    <div className="emp-name">{elem.Name}</div>
+                    <div className="emp-email">{elem.email}</div>
+                    <div className="emp-sex">{elem.Sex}</div>
+                  </div>
                 </Link>
               );
             })}
