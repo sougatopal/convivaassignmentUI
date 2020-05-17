@@ -60,3 +60,30 @@ body {
   cursor: pointer;
   padding: 0.5rem;
 }
+.emp-sex {
+  width: 10%;
+}
+.emp-email {
+  width: 30%;
+}
+.emp-name {
+  width: 30%;
+}
+.empID {
+  width: 10%;
+}
+.responsive-wrp {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 450px) and (min-width: 300px) {
+  .responsive-wrp {
+    flex-flow: column;
+    padding-left: 20px;
+  }
+  .emp-name,
+  .emp-email {
+    width: 100%;
+  }
+}
