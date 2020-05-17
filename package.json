@@ -5,6 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "jest": "26.0.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-redux": "7.2.0",
@@ -22,10 +25,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "jest": {
+    "testRegex": "/__tests__/.*[sS]pec.js$",
+    "testPathIgnorePatterns": ["/node_modules/", "/spec", "/__snapshots__"]
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
